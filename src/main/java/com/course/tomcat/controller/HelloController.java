@@ -17,5 +17,10 @@ public class HelloController {
     @GetMapping(value = "/random")
     String random() {
        return "Random time: " + ThreadLocalRandom.current().nextInt(0,1000) + ". \n";
-    } 
+    }
+    
+    @GetMapping(value = "/hero")
+    String hero(){
+        return "My favorite superhero is Batman";
+    }
 }
