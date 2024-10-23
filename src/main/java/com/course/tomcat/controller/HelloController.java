@@ -15,7 +15,7 @@ public class HelloController {
     }
 
     @GetMapping(value = "/random")
-    int random() {
+    String random() {
        return "Random time: " + ThreadLocalRandom.current().nextInt(0,1000);
     } 
 }
